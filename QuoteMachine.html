@@ -1,10 +1,16 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
   <head>
     <link rel="stylesheet" type="text/css" href="QuoteMachine.css"/>
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">       
-   <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+      
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Nanum+Pen+Script|Raleway|Montserrat|Give+You+Glory|Indie+Flower|Open+Sans|Caveat|Gloria+Hallelujah|Mrs+Sheppards|Nanum+Brush+Script|Pacifico|Sacramento|Satisfy|Shadows+Into+Light" rel="stylesheet">    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">-->
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -13,30 +19,30 @@
     <title>Radek's Quote Machine</title>
   </head>
 
-  <body>
+  <body class=class="randomColor" id='bdy'>
+
+
     <div class="container">
-  <p id=quote></p>
-  <p id=author></p>
-  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <p id="quote">- </p>
+  <p id="author"></p>
 
-      <div class="btn-group mr-2" role="group" aria-label="First group">
 
-        <button type="button" class="btn btn-secondary">Twitter</button>
 
-        <button type="button" class="btn btn-secondary">Facebook</button>
-
-      <div class="btn-group mr-6" role="group" aria-label="Third group"></div>
-        <button type="button" class="btn btn-secondary" id="nextQuote">Next Quote</button>
-  
-  </div>
+  <button type="button" class="btn btn-primary fa fa-twitter shadow" id="btnTweet"></button>
+<!-- <button type="button" class="btn btn-primary fa fa-facebook shadow" id="btnFcb"></button> -->
+<button type="button" class="btn btn-primary pull-right shadow" id="nextQuote">Next Quote</button>
 
     </div>
 
+<div>
+  <p id="impressum">coded by <a target="_blank" href="https://twitter.com/RadoKosiada">Radek</a></p>
+</div>
 
 
 
-    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+      <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     -->
 

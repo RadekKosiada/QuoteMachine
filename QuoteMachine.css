@@ -1,5 +1,73 @@
+body {
+  display: none;
+}
+
 .container {
-  border: 1px black solid;
+  /* border: 1px black solid; */
   border-radius: 10px;
   margin-top: 10em;
+  background-color: white;
+  padding-top: 10px;
+  box-shadow: 20px 20px 8px grey;
+  max-width: 35em !important;
+  
+};
+
+#quote, #author {
+  font-family: 'Indie Flower', cursive;
 }
+
+.btn {
+  margin-bottom: 20px;
+  border-color: white;
+  font-size: 20em;
+  min-width: 50px; 
+  min-height: 50px;
+  box-shadow: 5px 5px 5px grey;
+}
+
+#quote {
+  font-size: 2em;
+  font-style: italic;
+  font-weight: 200;
+}
+
+#author {
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+#nextQuote {
+  font-family: 'Indie Flower', cursive;
+  font-size:1.5em;
+  float: right;
+  color: black;
+  background-color: white !important;
+  border-width: 3px !important;
+  /* box-shadow: grey !important; */
+  /* box-shadow: none; */
+  box-shadow: 5px 5px 5px grey;
+  };
+
+.randomColor {
+  color: g
+}
+
+.fa-twitter {
+  color: white;
+}
+
+.pull-right {
+  float: right !important;
+}
+
+#impressum {
+  color: white !important; 
+  font-weight: 300;
+  text-align: center;
+  margin-top: 2.5em;
+  text-decoration: none;
+  }
+
+ 
