@@ -70,6 +70,7 @@ function getRandom() {
     document.querySelector("#author").style.fontFamily = randomFont;
     document.querySelector("#nextQuote").style.fontFamily = randomFont;
     document.querySelector("#impressum").style.fontFamily = randomFont;
+    document.querySelector("#readMore").style.fontFamily = randomFont;
     
 };
 
@@ -134,6 +135,51 @@ function outgoing(){
 }
 
 document.getElementById("btnTweet").addEventListener("click", outgoing); 
+
+
+var addInfo = 'A project made as a part of the <a target="_blank" href="https://www.freecodecamp.org/challenges/build-a-random-quote-machine">freeCodeCamp</a> curriculum.';
+
+var objectives = '<h5>Objectives:</h5>\
+                    <li>Use JavaScript or jQuery;</li>\
+                    <li>Use whichever library or APIs you need;</li>\
+                    <li>Give it your own personal style;</li>\
+                    <li>Add a button to show a new random quote;</li>\
+                    <li>Add a button to tweet out a quote.</li>';
+
+var addInput =  '<h5>My additional input:</h5>\
+                  <li>I chose this <a target="_blank" href="https://quotesondesign.com/api-v4-0/">API;</a></li>\
+                  <li>I used Bootstrap 4;</li>\
+                  <li>The color of the background, twitter button and border of the "Next Quote" button is randomly generated, each time a new quote is loaded;</li>\
+                  <li>I chose several "handwritten" family fonts. The quotes are randomly displayed with one of them.</li>';                   
+
+var lessInfo = false;
+function readMore () {
+    if(lessInfo) {
+        document.querySelector("#moreInfo").innerHTML="Read more ...";        
+        document.querySelector("#additionalInfo").innerHTML = "";
+        document.querySelector("#objectives").innerHTML= "";      
+        document.querySelector("#addInput").innerHTML =""; 
+        document.querySelector("#readMore2").style="visibility: hidden";
+        lessInfo= !lessInfo;
+    } else {
+/* background-color: white; */
+    /* box-shadow: 15px 15px 8px grey; */
+
+        document.querySelector("#readMore2").style="background-color:white";
+        document.querySelector("#readMore2").style="box-shadow: 15px 15px 8px grey";
+        document.querySelector("#moreInfo").innerHTML="Read less";
+        document.querySelector("#additionalInfo").innerHTML = addInfo;
+        // document.querySelector("#additionalInfo").style =marginLeft;
+        document.querySelector("#objectives").innerHTML= objectives;
+        // document.querySelector("#objectives").style =marginLeft;        
+        document.querySelector("#addInput").innerHTML =addInput;
+        // document.querySelector("#addInput").style =marginLeft;
+        lessInfo= !lessInfo;
+    }
+};
+
+document.querySelector("#moreInfo").addEventListener("click", readMore);
+
 
 // function outgoingFcb (){
 // var urlFcb= 'http://www.linkedin.com/shareArticle?mini=true&url=https://my-spoiler-alert.com/radek/QM.html&title=Radeks+Quote+Machine+&summary=The+Greatest+Web+Exp&source=<source>';
